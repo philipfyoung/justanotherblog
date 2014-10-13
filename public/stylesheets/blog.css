@@ -1,0 +1,12 @@
+.main-post {
+    float: left;
+}
+
+.sort-post {
+    float: right;
+}
+
+.backsplash {
+    background-color: white;
+    z-index: -100;
+}

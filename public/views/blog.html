@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{headingTitle}}
+            <div class="pull-right glyphicon glyphicon-search">
+                <input class="search" type="text" ng-model="query.name" placeholder="Search...">
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row show-list">
+                <div class="col-xs-4 col-md-3" ng-repeat="post in posts | filter:query | orderBy:'rating':true">
+                    <a href="/posts/{{post._id}}">
+                        <img class="img-rounded" ng-src="{{post.poster}}" width="100%"/>
+                    </a>
+                    <div class="text-center">
+                        <a href="/posts/{{post._id}}">{{post.name}}</a>
+                        <p class="text-muted">Episodes: {{post.episodes.length}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
