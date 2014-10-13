@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Just Another Blog</title>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div ng-include="'views/partials/_header.html'"></div>
+
+<div class="container">
+    <div ng-view></div>
+</div>
+
+<div ng-include="'views/partials/_footer.html'"></div>
+
+
+
+<!-- Bower Scripts -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+
+<!-- Vendor Scripts -->
+<script src="vendor/angular-strap.tpl.js"></script>
+
+<!-- Project Scripts -->
+<script src="app.js"></script>
+<script src="client/controllers/main.js"></script>
+<script src="services/post.js"></script>
+</body>
+</html>
+
